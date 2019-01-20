@@ -19,7 +19,7 @@ import org.springframework.web.client.RestTemplate;
 public class OrderServiceApplication {
     @Bean
     @LoadBalanced
-    public RestTemplate restTemplate(){
+    public RestTemplate restTemplate() {
         return new RestTemplate();
     }
 

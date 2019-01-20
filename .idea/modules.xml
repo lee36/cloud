@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/consul-server/consul-server.iml" filepath="$PROJECT_DIR$/consul-server/consul-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gate-way-server/gate-way-server.iml" filepath="$PROJECT_DIR$/gate-way-server/gate-way-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/order-service/order-service.iml" filepath="$PROJECT_DIR$/order-service/order-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/product-server/product-server.iml" filepath="$PROJECT_DIR$/product-server/product-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/zuul-server/zuul-server.iml" />

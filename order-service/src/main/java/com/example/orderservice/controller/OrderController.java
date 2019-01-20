@@ -20,17 +20,17 @@ public class OrderController {
 
     @RequestMapping("/save")
     @HystrixCommand(fallbackMethod = "saveFail")
-    public Object save(int userId,int productId){
+    public Object save(int userId, int productId) {
         HashMap<Object, Object> map = new HashMap<>();
-        map.put("code",0);
-        map.put("msg",orderService.save(userId,productId));
+        map.put("code", 0);
+        map.put("msg", orderService.save(userId, productId));
         return map;
     }
 
-    public Object saveFail(int userId,int productId){
+    public Object saveFail(int userId, int productId) {
         HashMap<Object, Object> map = new HashMap<>();
-        map.put("code",-1);
-        map.put("msg","凉了");
+        map.put("code", -1);
+        map.put("msg", "凉了");
         return map;
     }
 }

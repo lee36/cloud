@@ -6,14 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="consul-server" />
         <module name="eureka-server" />
+        <module name="gate-way-server" />
         <module name="order-service" />
         <module name="product-server" />
         <module name="zuul-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="consul-server" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="gate-way-server" target="1.8" />
       <module name="order-service" target="1.8" />
       <module name="product-server" target="1.8" />
       <module name="zuul-server" target="1.8" />

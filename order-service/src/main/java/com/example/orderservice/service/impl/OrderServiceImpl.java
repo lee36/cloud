@@ -11,9 +11,10 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Date;
 import java.util.Map;
 import java.util.UUID;
+
 @Service
 public class OrderServiceImpl implements OrderService {
-//    @Autowired
+    //    @Autowired
 //    private RestTemplate restTemplate;
 //    @Autowired
 //    private LoadBalancerClient loadBalancerClient;
@@ -22,9 +23,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order save(int userId, int productId) {
-       // Map map = restTemplate.getForObject("http://PRODUCT-SERVER/product/get/" + productId, Map.class);
+        // Map map = restTemplate.getForObject("http://PRODUCT-SERVER/product/get/" + productId, Map.class);
         Object o = productClient.get(productId);
-        System.out.println(o+"========");
+        System.out.println(o + "========");
         Order order = new Order();
 //        order.setPrice((Integer) map.get("price"));
 //        order.setCreateTime(new Date());
